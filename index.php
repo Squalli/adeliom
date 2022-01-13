@@ -5,7 +5,8 @@ use App\Controller;
 
 $uri = explode("/", $_SERVER['REQUEST_URI']);
 array_shift($uri);
-$method = $uri[0] ?? "home";
+
+$method = $uri[0] !== "" ? $uri[0] : "home";
 
 $id = $uri[1] ?? null;
 
