@@ -1,0 +1,6 @@
+RewriteEngine On
+
+ErrorDocument 404 /view/404.html
+RewriteRule ^(css|js|fonts|images|plugins)($|/) - [L]
+RewriteRule ^([a-z]*)\$ /index.php?method=$1 [L]
+RewriteRule ^([a-z]*)/([0-9]*)\$ /index.php?method=$1&id=$2 [L]

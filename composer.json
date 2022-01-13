@@ -1,0 +1,19 @@
+{
+    "name": "squalli/adeliom",
+    "description": "test de competences adeliom",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Squalli",
+            "email": "virgile.gibello@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    }
+}
